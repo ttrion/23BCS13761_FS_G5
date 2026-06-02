@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#feed {
+    max-width: 600px;
+    margin: auto;
+}
+
+.post {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+#loader {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}

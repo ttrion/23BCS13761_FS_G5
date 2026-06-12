@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    min-height: 100vh;
+    transition: 0.3s;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 25px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Stories */
+
+.stories {
+    display: flex;
+    gap: 15px;
+
+    overflow-x: auto;
+
+    padding: 20px;
+}
+
+.story {
+    text-align: center;
+    min-width: 80px;
+}
+
+.story-circle {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        45deg,
+        orange,
+        red,
+        purple
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Feed */
+
+.post {
+    width: 500px;
+    max-width: 95%;
+
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.post-header {
+    padding: 12px;
+    font-weight: bold;
+}
+
+.post img {
+    width: 100%;
+    display: block;
+}
+
+.post-body {
+    padding: 12px;
+}
+
+/* Light Theme */
+
+.light {
+    background: white;
+    color: black;
+}
+
+.light header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.light .post {
+    background: white;
+    border: 1px solid #ddd;
+}
+
+/* Dark Theme */
+
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark header {
+    background: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+.dark .post {
+    background: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.dark button {
+    background: #333;
+    color: white;
+}

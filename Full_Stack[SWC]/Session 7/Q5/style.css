@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.player {
+    max-width: 700px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.now-playing {
+    background: #1db954;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.volume {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.queue,
+.recent {
+    background: #181818;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.song {
+    padding: 10px;
+    margin: 5px 0;
+    background: #282828;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.song:hover {
+    background: #3a3a3a;
+}

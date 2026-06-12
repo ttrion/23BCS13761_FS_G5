@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Cart Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Shopping Cart System</h1>
+
+    <div class="container">
+        <h2>Products</h2>
+
+        <div class="product">
+            <span>iPhone - ₹50000</span>
+            <button onclick="addToCart(1,'iPhone',50000)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <span>Laptop - ₹70000</span>
+            <button onclick="addToCart(2,'Laptop',70000)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <span>Headphones - ₹3000</span>
+            <button onclick="addToCart(3,'Headphones',3000)">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Cart</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="cartItems"></tbody>
+        </table>
+
+        <h3>Total: ₹<span id="totalPrice">0</span></h3>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filtering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Product Filter System</h1>
+
+        <div class="filters">
+
+            <div class="filter-group">
+                <label>Category</label>
+                <select id="category">
+                    <option value="">All</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Books">Books</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Max Price (₹)</label>
+                <input type="number" id="price" placeholder="Enter max price">
+            </div>
+
+            <div class="filter-group">
+                <label>Minimum Rating</label>
+                <select id="rating">
+                    <option value="">All</option>
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <button id="applyFilter">
+                Apply Filters
+            </button>
+
+        </div>
+
+        <div id="productList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
